@@ -3,10 +3,231 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>flipcart</title>
   </head>
   <body>
-    <p>hello world</p>
+    <header class="sticky-header">
+      <div class="header-main">
+        <div class="logo-wrapper">
+          <img class="logo" alt="loading" src="images/flipcart-logo.svg" />
+        </div>
+        <div class="search-wrapper">
+          <button class="search-icon-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="search-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </button>
+          <div class="input-search-bar-wrapper">
+            <input
+              class="search-bar"
+              type="search"
+              placeholder="Search for Products, Brands and More"
+            />
+          </div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="nav-bar-wrapper">
+          <div class="nav-bar-item">
+            <div class="nav-bar-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="login-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+              </svg>
+            </div>
+            <div class="nav-bar-text">Log in</div>
+
+            <div class="nav-bar-down-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="down-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="nav-bar-item">
+            <div class="nav-bar-icon">
+              <img class="cart-icon" src="images/cart.svg" />
+            </div>
+            <div class="nav-bar-text">Cart</div>
+          </div>
+          <div class="nav-bar-item">
+            <div class="nav-bar-icon">
+              <img class="shop-icon" src="images/shop.svg" />
+            </div>
+            <div class="nav-bar-text">Become a Seller</div>
+          </div>
+          <div class="nav-bar-item">
+            <div class="dots-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="dots"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section-prefer">
+      <div class="section-prefer-wrapper">
+        <div class="prefer-wrapper">
+          <div class="prefer-img-wrapper">
+            <img class="prefer-img" src="images/grocery.webp" alt="loading" />
+          </div>
+          <div class="prefer-text">Grocery</div>
+        </div>
+        <div class="prefer-wrapper">
+          <div class="prefer-img-wrapper">
+            <img class="prefer-img" src="images/mobiles.webp" alt="loading" />
+          </div>
+          <div class="prefer-text">Mobiles</div>
+        </div>
+        <div class="prefer-wrapper">
+          <div class="prefer-img-wrapper">
+            <img class="prefer-img" src="images/man.webp" alt="loading" />
+          </div>
+          <div class="prefer-text">Fashion</div>
+        </div>
+        <div class="prefer-wrapper">
+          <div class="prefer-img-wrapper">
+            <img class="prefer-img" src="images/laptop.webp" alt="loading" />
+          </div>
+          <div class="prefer-text">Electronics</div>
+        </div>
+        <div class="prefer-wrapper">
+          <div class="prefer-img-wrapper">
+            <img class="prefer-img" src="images/home.webp" alt="loading" />
+          </div>
+          <div class="prefer-text">Home & Funiture</div>
+        </div>
+        <div class="prefer-wrapper">
+          <div class="prefer-img-wrapper">
+            <img class="prefer-img" src="images/tv.webp" alt="loading" />
+          </div>
+          <div class="prefer-text">Appliances</div>
+        </div>
+        <div class="prefer-wrapper">
+          <div class="prefer-img-wrapper">
+            <img class="prefer-img" src="images/airplane.webp" alt="loading" />
+          </div>
+          <div class="prefer-text">Flight Booking</div>
+        </div>
+        <div class="prefer-wrapper">
+          <div class="prefer-img-wrapper">
+            <img class="prefer-img" src="images/teddy.webp" alt="loading" />
+          </div>
+          <div class="prefer-text">Beauty, Toys and More</div>
+        </div>
+        <div class="prefer-wrapper">
+          <div class="prefer-img-wrapper">
+            <img class="prefer-img" src="images/bike.webp" alt="loading" />
+          </div>
+          <div class="prefer-text">Two Wheelers</div>
+        </div>
+      </div>
+    </section>
+    <section class="section-slider">
+      <div class="section-slider-wrapper">
+        <buttton class="arrow-btn left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="4.5"
+            stroke="#999"
+            class="chevron"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </buttton>
+        <div class="slider-back-img-wrapper">
+          <img
+            class="slider-back-img"
+            src="images/back-air-plane.webp"
+            alt="loading"
+          />
+        </div>
+        <div class="slider-btn-wrapper">
+          <div class="slider-btn fill"></div>
+          <div class="slider-btn"></div>
+          <div class="slider-btn"></div>
+          <div class="slider-btn"></div>
+          <div class="slider-btn"></div>
+        </div>
+        <buttton class="arrow-btn right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="4.5"
+            stroke="#999"
+            class="chevron"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </buttton>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
   </body>
 </html>
-`
