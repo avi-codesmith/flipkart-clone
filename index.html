@@ -3672,6 +3672,25 @@
             <p class="footer-upper-li">Bengaluru, 560103,</p>
             <p class="footer-upper-li">Karnaka, India</p>
           </div>
+
+          <div class="social">
+            <h1 class="footer-upper-heading margin-top">Social:</h1>
+            <div class="social-container">
+              <div class="social-icon-wrapper">
+                <img
+                  class="social-icon"
+                  alt="loading"
+                  src="images/facebook.svg"
+                />
+              </div>
+              <div class="social-icon-wrapper">
+                <img class="social-icon" alt="loading" src="images/x.svg" />
+              </div>
+              <div class="social-icon-wrapper">
+                <img class="social-icon" alt="loading" src="images/yt.svg" />
+              </div>
+            </div>
+          </div>
         </div>
         <div class="footer-nav">
           <h1 class="footer-upper-heading">Registered Office Address:</h1>
@@ -3692,15 +3711,50 @@
         </div>
       </div>
 
-      <div class="divider"></div>
-
       <div class="footer-lower">
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
+        <div class="footer-lower-li">
+          <div class="logo-link-wrapper">
+            <div class="footer-logo-wrapper">
+              <img class="footer-logo" alt="loading" src="images/shop-g.svg" />
+            </div>
+            <p class="footer-lower-text">Become a Seller</p>
+          </div>
+        </div>
+        <div class="footer-lower-li">
+          <div class="logo-link-wrapper">
+            <div class="footer-logo-wrapper">
+              <img class="footer-logo" alt="loading" src="images/star.svg" />
+            </div>
+            <p class="footer-lower-text">Adervertise</p>
+          </div>
+        </div>
+        <div class="footer-lower-li">
+          <div class="logo-link-wrapper">
+            <div class="footer-logo-wrapper">
+              <img class="footer-logo" alt="loading" src="images/gift.svg" />
+            </div>
+            <p class="footer-lower-text">Gift Cards</p>
+          </div>
+        </div>
+        <div class="footer-lower-li">
+          <div class="logo-link-wrapper">
+            <div class="footer-logo-wrapper">
+              <img class="footer-logo" alt="loading" src="images/help.svg" />
+            </div>
+            <p class="footer-lower-text">Help Canter</p>
+          </div>
+        </div>
+        <div class="footer-lower-li">
+          <p class="footer-copyright">
+            copyright &copy; <span class="year">2011</span> &lt;/&gt; by
+            <a class="coder" href="https://github.com/avi-codesmith"
+              >Avi-codesmith</a
+            >
+          </p>
+        </div>
+        <div class="footer-lower-li img-wrapper">
+          <img class="footer-payment" src="images/payment.svg" alt="loading" />
+        </div>
       </div>
     </footer>
 
@@ -3708,5 +3762,10 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
+    <script>
+      const yearEl = document.querySelector(".year");
+      const currentYear = new Date().getFullYear();
+      yearEl.textContent = currentYear;
+    </script>
   </body>
 </html>
