@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/quiries.css" />
     <title>flipkart-clone</title>
   </head>
   <body>
@@ -46,71 +47,187 @@
       </div>
       <nav class="navbar">
         <div class="nav-bar-wrapper">
-          <div class="nav-bar-item">
-            <div class="nav-bar-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="login-icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                />
-              </svg>
-            </div>
-            <div class="nav-bar-text">Log in</div>
+          <div class="logo-in-hover">
+            <div class="nav-bar-item">
+              <div class="nav-bar-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="login-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                </svg>
+              </div>
+              <div class="nav-bar-text">Log in</div>
+              <div class="nav-bar-down-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="down-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
 
-            <div class="nav-bar-down-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="down-icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                />
-              </svg>
+              <div class="hover-div">
+                <div class="hover-div-header">
+                  <div class="heading">New-customer?</div>
+                  <div
+                    class="hover-div-link"
+                    style="color: #427ae9; font-weight: 600"
+                  >
+                    Sign Up
+                  </div>
+                </div>
+                <div class="hover-div-optons">
+                  <div class="hover-div-option">
+                    <div class="option-logo-wrapper">
+                      <img
+                        class="option-logo"
+                        src="images/profile.svg"
+                        alt="loading"
+                      />
+                    </div>
+                    <div class="option-text">My Profile</div>
+                  </div>
+                  <div class="hover-div-option">
+                    <div class="option-logo-wrapper">
+                      <img class="option-logo" src="images/fk-plus.svg" />
+                    </div>
+                    <div class="option-text">Fipcart Plus Zone</div>
+                  </div>
+                  <div class="hover-div-option">
+                    <div class="option-logo-wrapper">
+                      <img
+                        class="option-logo"
+                        alt="loading"
+                        src="images/orders.svg"
+                      />
+                    </div>
+                    <div class="option-text">Orders</div>
+                  </div>
+                  <div class="hover-div-option">
+                    <div class="option-logo-wrapper">
+                      <img
+                        class="option-logo"
+                        alt="loading"
+                        src="images/heart.svg"
+                      />
+                    </div>
+                    <div class="option-text">Wishlist</div>
+                  </div>
+                  <div class="hover-div-option">
+                    <div class="option-logo-wrapper">
+                      <img
+                        class="option-logo"
+                        alt="loading"
+                        src="images/gift-white.svg"
+                      />
+                    </div>
+                    <div class="option-text">Rewards</div>
+                  </div>
+                  <div class="hover-div-option">
+                    <div class="option-logo-wrapper">
+                      <img
+                        class="option-logo"
+                        alt="loading"
+                        src="images/gift-card.svg"
+                      />
+                    </div>
+                    <div class="option-text">Gift Cards</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="nav-bar-item">
             <div class="nav-bar-icon">
               <img class="cart-icon" src="images/cart.svg" />
             </div>
-            <div class="nav-bar-text">Cart</div>
+            <div class="nav-bar-text hidden-in-q">Cart</div>
           </div>
           <div class="nav-bar-item">
             <div class="nav-bar-icon">
               <img class="shop-icon" src="images/shop.svg" />
             </div>
-            <div class="nav-bar-text">Become a Seller</div>
+            <div class="nav-bar-text hidden-in-q">Become a Seller</div>
           </div>
-          <div class="nav-bar-item">
-            <div class="dots-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="dots"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
-                />
-              </svg>
+          <div class="dots-hover-wrapper">
+            <div class="nav-bar-item">
+              <div class="dots-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="dots"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
+                  />
+                </svg>
+              </div>
             </div>
+           
+            <div class="hover-div dots-div-position">
+              <div class="hover-div-options">
+                <div class="hover-div-option">
+                  <div class="option-logo-wrapper">
+                    <img
+                      class="option-logo"
+                      src="images/bell.svg"
+                      alt="loading"
+                    />
+                  </div>
+                  <div class="option-text">Notification Prefrences</div>
+                </div>
+                <div class="hover-div-option">
+                  <div class="option-logo-wrapper">
+                    <img class="option-logo" src="images/call.svg" />
+                  </div>
+                  <div class="option-text">24x7 Customer Care</div>
+                </div>
+                <div class="hover-div-option">
+                  <div class="option-logo-wrapper">
+                    <img
+                      class="option-logo"
+                      alt="loading"
+                      src="images/advertise.svg"
+                    />
+                  </div>
+                  <div class="option-text">Advertise</div>
+                </div>
+                <div class="hover-div-option">
+                  <div class="option-logo-wrapper">
+                    <img
+                      class="option-logo"
+                      alt="loading"
+                      src="images/download.svg"
+                    />
+                  </div>
+                  <div class="option-text">Download App</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
           </div>
         </div>
       </nav>
@@ -143,19 +260,19 @@
             </div>
             <div class="prefer-text">Electronics</div>
           </div>
-          <div class="prefer-wrapper">
+          <div class="prefer-wrapper hidden-in-q">
             <div class="prefer-img-wrapper">
               <img class="prefer-img" src="images/home.webp" alt="loading" />
             </div>
             <div class="prefer-text">Home & Funiture</div>
           </div>
-          <div class="prefer-wrapper">
+          <div class="prefer-wrapper hidden-in-q">
             <div class="prefer-img-wrapper">
               <img class="prefer-img" src="images/tv.webp" alt="loading" />
             </div>
             <div class="prefer-text">Appliances</div>
           </div>
-          <div class="prefer-wrapper">
+          <div class="prefer-wrapper hidden-in-q">
             <div class="prefer-img-wrapper">
               <img
                 class="prefer-img"
@@ -236,7 +353,7 @@
           </buttton>
         </div>
       </section>
-      <section class="section-products-slider">
+      <section class="section-products-slider hidden-in-q">
         <div class="products-slider-wrapper one-third-width">
           <div class="ptroducts-header-wrapper">
             <h2 class="products-heading">Best of Electronics</h2>
@@ -1313,7 +1430,7 @@
 
       <section class="section-img-card">
         <div class="products-slider">
-          <div class="products-slider-wrapper half-width">
+          <div class="products-slider-wrapper half-width hidden-in-q">
             <div class="ptroducts-header-wrapper">
               <h2 class="products-heading">Best of Electronics</h2>
               <div class="arrow-wrapper">
@@ -1406,7 +1523,7 @@
         </div>
       </section>
 
-      <section class="section-products-slider full-width">
+      <section class="section-products-slider full-width hidden-in-q">
         <div class="products-slider-wrapper full-width">
           <div class="ptroducts-header-wrapper">
             <h2 class="products-heading">Beauty, Foods, Toys & more</h2>
@@ -1525,7 +1642,7 @@
         </div>
       </section>
 
-      <section class="section-products-slider full-width">
+      <section class="section-products-slider full-width hidden-in-q">
         <div class="products-slider-wrapper full-width">
           <div class="ptroducts-header-wrapper">
             <h2 class="products-heading">Beauty, Foods, Toys & more</h2>
@@ -1644,7 +1761,7 @@
         </div>
       </section>
 
-      <section class="section-products-slider full-width">
+      <section class="section-products-slider full-width hidden-in-q">
         <div class="products-slider-wrapper full-width">
           <div class="ptroducts-header-wrapper">
             <h2 class="products-heading">Beauty, Foods, Toys & more</h2>
