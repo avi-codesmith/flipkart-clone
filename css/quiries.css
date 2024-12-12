@@ -71,4 +71,20 @@
   .slider-back-img-wrapper {
     height: 20rem;
   }
+
+  .nav-bar-down-wrapper {
+    display: none;
+  }
+
+  .dots-wrapper {
+    display: none;
+  }
+
+  .search-wrapper {
+    display: none;
+  }
+
+  body {
+    background-color: #fff;
+  }
 }
