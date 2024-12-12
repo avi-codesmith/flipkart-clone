@@ -10,6 +10,7 @@
 
 html {
   font-size: 62.5%;
+  position: relative;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 9999;
-  position: relative;
+  /* position: relative; */
 }
 
 .header-main {
@@ -40,6 +41,8 @@ body {
   height: 4rem;
   width: 16rem;
   margin-right: 3.6rem;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -788,4 +791,93 @@ li:hover {
   padding: 25px 0;
   margin-top: 40px;
   width: 100%;
+}
+
+.side-hamburger {
+  position: absolute;
+  top: 0;
+  z-index: 999999;
+  width: 80vw;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.side-hamburger-header {
+  background-color: #427ae9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem 1.6rem;
+}
+
+.side-option-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.header-logo {
+  height: 25px;
+  width: 25px;
+  color: #fff;
+}
+
+.header-profile {
+  height: 100%;
+  width: 100%;
+}
+
+.side-header-option {
+  height: 25px;
+  width: 25px;
+}
+
+.side-option-logo-wrapper {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.side-option-logo {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+
+.side-option-wrapper {
+  display: flex;
+  align-items: self-start;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 2rem; */
+}
+
+.side-option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 23px;
+  padding: 1.4rem;
+  width: 100%;
+}
+
+.side-option-text {
+  font-size: 14px;
+  color: #353535;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ddd;
 }
