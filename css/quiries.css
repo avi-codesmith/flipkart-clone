@@ -169,4 +169,8 @@
   .hidden {
     display: block;
   }
+
+  .hover-div {
+    right: 6rem;
+  }
 }

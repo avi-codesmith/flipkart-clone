@@ -816,15 +816,21 @@ li:hover {
   margin-top: 40px;
   width: 100%;
 }
-
 .side-hamburger {
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 100%;
+  right: -80vw; /* Initially off-screen */
   z-index: 999999;
   width: 80vw;
   background-color: #fff;
   height: 100vh;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  transform: translateX(0); /* Default state */
+}
+
+.side-hamburger.open {
+  transform: translateX(-80vw); /* Slide in when open */
 }
 
 .side-hamburger-header {
@@ -914,4 +920,37 @@ li:hover {
   font-size: 2rem;
   font-weight: 600;
   border-top: 2px solid #ccc;
+}
+
+.show .side-hamburger {
+  position: fixed;
+  left: 0;
+  right: 100%;
+  z-index: 999999;
+  width: 80vw;
+  background-color: #fff;
+  height: 100vh;
+  /* transition: all 4s ease; */
+  box-shadow: 0 89px 32px rgba(1, 1, 1, 0.7);
+}
+
+.owerflow-hidden {
+  overflow: hidden;
+}
+
+.side-header-option {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  filter: invert(1);
 }
