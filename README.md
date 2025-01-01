@@ -1,5 +1,5 @@
-#About Flipkart clone
-##This is the fully responsive HTML CSS clone of Flipkart.
+# About Flipkart clone
+## This is the fully responsive HTML CSS clone of Flipkart.
 ## [Click to watch the clone](https://flipcart-xlone.netlify.app/)
 
 
